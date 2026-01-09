@@ -1,3 +1,8 @@
+:root{
+    --transition:all 1s ease;
+}
+
+
 body{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     overflow: hidden;  
@@ -29,33 +34,32 @@ body{
 }
 
 .contenido_titulo{
-    font-size: 8rem;
-    text-shadow: 0 0 3rem #c17a20;
+    font-size: 7.5rem;
+    text-shadow: 0 0 3rem #ffd000;
     padding: 2rem;
-    transition: all 2s ease;
+    transition: var(--transition);
 }
 .contenido_titulo:hover{
-    text-shadow: 0 0 3rem #ffd000;
-    cursor: pointer;
+    font-size: 8.2rem;
+    text-shadow: 0 0 0 #000000;
+    cursor: default;
 }
 
 
 .bottom{ 
-    font-size: 1.7rem;
-    font-weight: 700;/* negrilla en la letra */
-    text-decoration: none;
-
-    padding: 2rem;
-    border: 5px solid #c17a20;;
-    color: #ffedbf;
-    border-radius: 10px;
-    cursor: pointer;
-
     display: block;
     width: 10rem;
     margin-left: auto;
     margin-right: auto;
-    transition: all 2s ease;
+    padding: 2rem;
+    font-size: 1.7rem;
+    font-weight: 700;/* negrilla en la letra */
+    text-decoration: none;
+    color: #ffedbf;
+    border: 5px solid #c17a20;;
+    border-radius: 10px;
+    transition: var(--transition);
+    cursor: pointer;
 }
 .bottom:hover{
     transform: scale(1.2, 1.2);
